@@ -508,7 +508,7 @@ $(function(){
   
   //建立ws连接，每1分钟send
   if("WebSocket" in window){
-    var ws = new WebSocket('ws://127.0.0.1:8099/barrage/ws');
+    var ws = new WebSocket('ws://127.0.0.1:8080/barrage/ws');
     ws.onopen = function(event){
           console.log(event);
           console.log('连接了');
